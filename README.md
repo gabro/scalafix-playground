@@ -9,4 +9,5 @@ Example:
 ```bash
 $ sbt
 > scalafix NoAutoTupling
+> scalafix github:typelevel/cats/v1.0.0
 ```
