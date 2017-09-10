@@ -18,13 +18,14 @@ object Main extends App {
     println(x)
   }
 
+  // Cats
+  (Option(2) |@| Option(3)).map(_ + _)
+
   // RemoveXmlLiterals
   val xmlLiteral =
     <div>
       <span>{st}</span>
     </div>
-
-  (Option(2) |@| Option(3)).map(_ + _)
 
   val s = Set(1, 2, 3)
   proc(s.toString)
