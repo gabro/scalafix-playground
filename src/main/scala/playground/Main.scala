@@ -2,6 +2,9 @@
 import scala.collection.mutable.{ListBuffer, Set}
 import scala.concurrent.Future
 
+import cats.instances.all._
+import cats.syntax.cartesian._
+
 object Main extends App {
   // ExplicitResultType
   implicit val st = "string"
@@ -20,6 +23,8 @@ object Main extends App {
     <div>
       <span>{st}</span>
     </div>
+
+  (Option(2) |@| Option(3)).map(_ + _)
 
   val s = Set(1, 2, 3)
   proc(s.toString)
